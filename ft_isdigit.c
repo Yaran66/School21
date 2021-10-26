@@ -1,5 +1,15 @@
-#include <stdio.h>
-#include <ctype.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: wjasmine <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/10/26 19:08:31 by wjasmine          #+#    #+#             */
+/*   Updated: 2021/10/26 19:08:31 by wjasmine         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+#include "libft.h"
 
 int	ft_isdigit(int c)
 {
@@ -8,11 +18,3 @@ int	ft_isdigit(int c)
 	return (0);
 }
 
-int main (void)
-{
-	char c;
-	c = '5';
-	printf("%d\n", ft_isdigit(c));
-	printf("%d\n", isdigit(c));
-	return (0);
-}

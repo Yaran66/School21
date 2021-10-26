@@ -1,4 +1,15 @@
-#include <ctype.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: wjasmine <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/10/26 19:08:12 by wjasmine          #+#    #+#             */
+/*   Updated: 2021/10/26 19:08:12 by wjasmine         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+#include "libft.h"
 
 int	ft_isprint(int c)
 {
@@ -7,11 +18,3 @@ int	ft_isprint(int c)
 	return (0);
 }
 
-int main (void)
-{
-	char c;
-	c = '\n';
-	printf("%d\n", ft_isprint(c));
-	printf("%d\n", isprint(c));
-	return (0);
-}

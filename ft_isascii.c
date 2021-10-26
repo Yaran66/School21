@@ -1,5 +1,15 @@
-#include <stdio.h>
-#include <ctype.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: wjasmine <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/10/26 13:55:36 by wjasmine          #+#    #+#             */
+/*   Updated: 2021/10/26 13:55:44 by wjasmine         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+#include "libft.h"
 
 int	ft_isascii(int c)
 {
@@ -8,11 +18,3 @@ int	ft_isascii(int c)
 	return (0);
 }
 
-int main (void)
-{
-	char c;
-	c = 's';
-	printf("%d\n", ft_isascii(c));
-	printf("%d\n", isascii(c));
-	return (0);
-}

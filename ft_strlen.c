@@ -1,10 +1,19 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: wjasmine <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/10/26 19:15:21 by wjasmine          #+#    #+#             */
+/*   Updated: 2021/10/26 19:15:38 by wjasmine         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+#include "libft.h"
 
-#include <stdio.h>
-#include <string.h>
-
-int ft_strlen(char *str)
+size_t ft_strlen(char *str)
 {
-	int i;
+	size_t i;
 	i = 0;
 	while (str[i])
 	{
@@ -13,14 +22,4 @@ int ft_strlen(char *str)
 	return (i);
 }
 
-int main()
-{
-	char a[] = "Program";
-	char b[] = {'P','r','o','g','r','a','m','\0'};
 
-	printf("Length of string = %d\n", ft_strlen(a));
-	printf("Length of string = %d\n", strlen(a));
-	printf("Length of string = %d\n", ft_strlen(b));
-	printf("Length of string = %d\n", strlen(b));
-	return 0;
-}

@@ -1,5 +1,15 @@
-#include <stdio.h>
-#include <ctype.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: wjasmine <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/10/26 19:09:10 by wjasmine          #+#    #+#             */
+/*   Updated: 2021/10/26 19:09:10 by wjasmine         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+#include "libft.h"
 
 int	ft_isalnum(int c)
 {
@@ -9,11 +19,3 @@ int	ft_isalnum(int c)
 	return (0);
 }
 
-int main (void)
-{
-	char c;
-	c = '9';
-	printf("%d\n", ft_isalnum(c));
-	printf("%d\n", isalnum(c));
-	return (0);
-}

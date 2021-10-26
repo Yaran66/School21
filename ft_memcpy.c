@@ -1,9 +1,19 @@
-#include <stdio.h>
-#include <string.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: wjasmine <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/10/26 19:00:52 by wjasmine          #+#    #+#             */
+/*   Updated: 2021/10/26 19:00:52 by wjasmine         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+#include "libft.h"
 
 void * ft_memcpy(void *dest, const void *src, size_t size)
 {
-	int i;
+	size_t i;
 	i = 0;
 	while (i < size)
 	{
@@ -29,14 +39,4 @@ void * ft_memcpy(void *dest, const void *src, size_t size)
 }*/
 
 
-int main()
-{
-	char src[] = "GeeksForGeeks";
-	char dest[] = "Program";
-	//char b[] = {'P','r','o','g','r','a','m','\0'};
 
-	printf("%s\n",ft_memcpy(dest,src,14));
-	printf("%s\n",memcpy(dest,src,14));
-
-	return 0;
-}

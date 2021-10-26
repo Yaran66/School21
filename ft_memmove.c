@@ -1,5 +1,15 @@
-#include <stdio.h>
-#include <string.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: wjasmine <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/10/26 19:11:52 by wjasmine          #+#    #+#             */
+/*   Updated: 2021/10/26 19:11:52 by wjasmine         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+#include "libft.h"
 
 /*void * ft_memmove(void *dest, const void *src, size_t size)
 {
@@ -19,9 +29,9 @@
 	}
 	return(dest);
 }*/
-void * ft_memcpy(void *dest, const void *src, size_t size)
+/*void * ft_memcpy(void *dest, const void *src, size_t size)
 {
-	int i;
+	size_t i;
 	i = 0;
 	while (i < size)
 	{
@@ -29,7 +39,7 @@ void * ft_memcpy(void *dest, const void *src, size_t size)
 		i++;
 	}
 	return(dest);
-}
+}*/
 
 void * ft_memmove(void *dest, const void *src, size_t size)
 {
@@ -49,14 +59,4 @@ void * ft_memmove(void *dest, const void *src, size_t size)
 }
 
 
-int main()
-{
-	char src[] = "Program";
-	char dest[] = "GeeksForGeeks";
-	//char b[] = {'P','r','o','g','r','a','m','\0'};
 
-	printf("%s\n",ft_memmove(dest,src,5));
-	printf("%s\n",memmove(dest,src,5));
-
-	return 0;
-}
