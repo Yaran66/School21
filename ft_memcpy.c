@@ -6,14 +6,15 @@
 /*   By: wjasmine <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/26 19:00:52 by wjasmine          #+#    #+#             */
-/*   Updated: 2021/10/26 19:00:52 by wjasmine         ###   ########.fr       */
+/*   Updated: 2021/10/27 16:14:51 by wjasmine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
-void * ft_memcpy(void *dest, const void *src, size_t size)
+void	*ft_memcpy(void *dest, const void *src, size_t size)
 {
-	size_t i;
+	size_t	i;
+
 	i = 0;
 	if (dest != src)
 	{
@@ -23,7 +24,7 @@ void * ft_memcpy(void *dest, const void *src, size_t size)
 			i++;
 		}
 	}
-	return(dest);
+	return (dest);
 }
 
 /*void * ft_memcpy(void *dest, const void *src, size_t size)
@@ -40,6 +41,3 @@ void * ft_memcpy(void *dest, const void *src, size_t size)
 	}
 	return(dest);
 }*/
-
-
-

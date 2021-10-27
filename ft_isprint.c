@@ -6,7 +6,7 @@
 /*   By: wjasmine <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/26 19:08:12 by wjasmine          #+#    #+#             */
-/*   Updated: 2021/10/26 19:08:12 by wjasmine         ###   ########.fr       */
+/*   Updated: 2021/10/27 16:10:33 by wjasmine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -17,4 +17,3 @@ int	ft_isprint(int c)
 		return (1);
 	return (0);
 }
-

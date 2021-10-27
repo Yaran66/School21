@@ -6,7 +6,7 @@
 /*   By: wjasmine <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/26 19:11:52 by wjasmine          #+#    #+#             */
-/*   Updated: 2021/10/27 12:08:27 by wjasmine         ###   ########.fr       */
+/*   Updated: 2021/10/27 12:15:55 by wjasmine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -41,7 +41,7 @@
 	return(dest);
 }*/
 
-void * ft_memmove(void *dest, const void *src, size_t size)
+void	*ft_memmove(void *dest, const void *src, size_t size)
 {
 	if (dest < src)
 	{
@@ -54,8 +54,5 @@ void * ft_memmove(void *dest, const void *src, size_t size)
 			((char *)dest)[size] = ((char *)src)[size];
 		}
 	}
-	return(dest);
+	return (dest);
 }
-
-
-

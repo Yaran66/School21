@@ -1,33 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wjasmine <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/26 14:07:41 by wjasmine          #+#    #+#             */
-/*   Updated: 2021/10/26 20:18:53 by wjasmine         ###   ########.fr       */
+/*   Created: 2021/10/27 15:57:09 by wjasmine          #+#    #+#             */
+/*   Updated: 2021/10/27 15:59:14 by wjasmine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
-/*void *ft_memset(void *block, int c, size_t size)
+int	ft_tolower(int c)
 {
-	while (size--)
-	{
-		((unsigned char *)block)[size] = (unsigned char)c;
-	}
-	return(block);
-}*/
-
-void	ft_bzero(void *block, size_t size)
-{
-	ft_memset(block, 0, size);
+	if (c >= 'A' && c <= 'Z')
+		return (c + 32);
+	return (c);
 }
-/*void ft_bzero(void *block, size_t size)
-{
-	while (size--)
-	{
-		((unsigned char *)block)[size] = 0;
-	}
-}*/

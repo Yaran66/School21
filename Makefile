@@ -6,11 +6,11 @@
 #   By: wjasmine <marvin@42.fr>                    +#+  +:+       +#+        #
 #                                                +#+#+#+#+#+   +#+           #
 #   Created: 2021/10/26 14:58:42 by wjasmine          #+#    #+#             #
-#   Updated: 202#   Updated: 2021/10/27 15:22:37 by wjasmine         ###   ########.fr       #                                                              #
+#   Updated: 202#   Updated: 2021/10/27 15:43:11 by wjasmine         ###   ########.fr       #                                                              #
 # ************************************************************************** #
 
-SRCS	=	ft_isalnum.c \
-			ft_isalpha.c \
+SRCS	=	ft_isalnum.c ft_toupper.c \
+			ft_isalpha.c ft_tolower.c \
 			ft_isascii.c \
 			ft_isdigit.c \
 			ft_isprint.c \
