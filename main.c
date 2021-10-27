@@ -6,7 +6,7 @@
 /*   By: wjasmine <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/26 18:58:04 by wjasmine          #+#    #+#             */
-/*   Updated: 2021/10/26 20:20:36 by wjasmine         ###   ########.fr       */
+/*   Updated: 2021/10/27 11:15:56 by wjasmine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -101,5 +101,31 @@ int main()
 		printf("%s\n",bzero(a,5));
 		printf("%s\n",a);
 	}
-	return 0;
-}
+	//strlcpy
+	/*void test(int size)
+	{
+		char string[] = "Hello there, Venus";
+		char buffer[19];
+		int r;
+		int d;
+
+		r = strlcpy(buffer,string,size);
+
+		printf("Copied '%s' into '%s', length %d\n", string, buffer, r);
+
+		d = ft_strlcpy(buffer,string,size);
+
+		printf("Copied ft_strlcpy '%s' into '%s', length %d\n", string, buffer, r);
+	}
+
+	int main()
+	{
+		test(19);
+		test(10);
+		test(1);
+		test(0);
+
+		return(0);
+	}*/
+
+

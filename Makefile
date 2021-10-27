@@ -6,7 +6,7 @@
 #   By: wjasmine <marvin@42.fr>                    +#+  +:+       +#+        #
 #                                                +#+#+#+#+#+   +#+           #
 #   Created: 2021/10/26 14:58:42 by wjasmine          #+#    #+#             #
-#   Updated: 202#   Updated: 2021/10/26 20:36:31 by wjasmine         ###   ########.fr       #                                                              #
+#   Updated: 202#   Updated: 2021/10/27 12:25:39 by wjasmine         ###   ########.fr       #                                                              #
 # ************************************************************************** #
 
 SRCS	=	ft_isalnum.c \
@@ -18,7 +18,8 @@ SRCS	=	ft_isalnum.c \
 			ft_memmove.c \
 			ft_memset.c \
 			ft_strlen.c \
-			ft_bzero.c
+			ft_bzero.c \
+			ft_strlcpy.c
 
 SRCS_B	=
 
