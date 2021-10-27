@@ -14,4 +14,5 @@ void ft_bzero(void *block, size_t size);
 void * ft_memcpy(void *dest, const void *src, size_t size);
 void * ft_memmove(void *dest, const void *src, size_t size);
 size_t ft_strlcpy(char *dst, const char *src, size_t dstsize);
+size_t ft_strlcat(char *dst, const char *src, size_t dstsize);
 #endif
