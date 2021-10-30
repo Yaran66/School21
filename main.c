@@ -6,7 +6,7 @@
 /*   By: wjasmine <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/26 18:58:04 by wjasmine          #+#    #+#             */
-/*   Updated: 2021/10/27 11:15:56 by wjasmine         ###   ########.fr       */
+/*   Updated: 2021/10/30 17:24:42 by wjasmine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -126,6 +126,108 @@ int main()
 		test(0);
 
 		return(0);
-	}*/
+	}
+	// strchr
+	int main()
+	{
+		char string[] = "you are sure?";
+		char c = '\0';
+		char *q =ft_strchr(string, c);
+		char *p = strchr(string, c);
+		if (q == NULL)
+		{
+			printf("Not Found!\n");
+		} else
+		{
+			printf("Found!\n");
 
+		}
+		if (p == NULL)
+		{
+			printf("Not Found!\n");
+		} else
+		{
+			printf("Found!\n");
 
+		}
+		return 0;
+	}
+	int main()
+	{
+		char string[] = "are you sure?";
+		char c = 'a';
+		char *q =ft_strrchr(string, c);
+		char *p = strrchr(string, c);
+		if (q == NULL)
+		{
+			printf("Not Found!\n");
+		} else
+		{
+			printf("Found!\n");
+
+		}
+		if (p == NULL)
+		{
+			printf("Not Found!\n");
+		} else
+		{
+			printf("Found!\n");
+
+		}
+		return 0;
+
+	 // strncmp
+	 int main()
+	{
+		char string1[] = "are #ou sure?";
+		char string2[] = "are you sure?";
+		int i;
+
+		i = 5;
+
+		printf("%d\n", strncmp(string1, string2, i));
+		printf("%d\n", ft_strncmp(string1, string2, i));
+		return 0;
+	}
+
+	 memchr
+	 int main()
+{
+	char string[] = "you are sure?";
+	char c = '\0';
+	int n;
+	n = 15;
+	char *q =ft_memchr(string, c, n);
+	char *p = memchr(string, c, n);
+	if (q == NULL)
+	{
+		printf("Not Found!\n");
+	} else
+	{
+		printf("Found!\n");
+
+	}
+	if (p == NULL)
+	{
+		printf("Not Found!\n");
+	} else
+	{
+		printf("Found!\n");
+
+	}
+	return 0;
+}
+	 //memcmp
+	 int main()
+{
+	char string1[] = "are 3ou sure?";
+	char string2[] = "are you sure?";
+	int i;
+
+	i = 3;
+
+	printf("%d\n", memcmp(string1, string2, i));
+	printf("%d\n", ft_memcmp(string1, string2, i));
+	return 0;
+}
+*/
