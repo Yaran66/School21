@@ -6,7 +6,7 @@
 /*   By: wjasmine <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/26 18:58:04 by wjasmine          #+#    #+#             */
-/*   Updated: 2021/10/30 17:24:42 by wjasmine         ###   ########.fr       */
+/*   Updated: 2021/10/31 15:24:11 by wjasmine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -152,6 +152,7 @@ int main()
 		}
 		return 0;
 	}
+	 //strrchr
 	int main()
 	{
 		char string[] = "are you sure?";
@@ -229,5 +230,46 @@ int main()
 	printf("%d\n", memcmp(string1, string2, i));
 	printf("%d\n", ft_memcmp(string1, string2, i));
 	return 0;
+}
+	 ft_atoi
+
+int main(int argc, char **argv)
+{
+	(void) argc;
+//    (void) argv;
+//    char str[] = "   ---+--+1234ab567";
+	printf("%d\n", atoi(argv[1]));
+	printf("%d\n", ft_atoi(argv[1]));
+//    printf("%d\n", ft_atoi(str));
+	return(0);
+}
+	// strnstr
+
+int main()
+{
+	const char *largestring = "Foo Bar Baz";
+	const char *smallstring = "Bar";
+	size_t n;
+
+	n = 11;
+	//char *ptr =strnstr(largestring, smallstring, n);
+	char *ptr1 =ft_strnstr(largestring, smallstring, n);
+
+	/*if (ptr == NULL)
+	{
+		printf("Not Found!\n");
+	} else
+	{
+		printf("Found!\n");
+
+	}
+	if (ptr1 == NULL)
+	{
+		printf("Not Found!\n");
+	} else
+	{
+		printf("Found!\n");
+
+	}
 }
 */
