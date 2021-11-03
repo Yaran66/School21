@@ -6,12 +6,46 @@
 /*   By: wjasmine <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/26 19:11:52 by wjasmine          #+#    #+#             */
-/*   Updated: 2021/10/27 12:15:55 by wjasmine         ###   ########.fr       */
+/*   Updated: 2021/11/03 12:18:55 by wjasmine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
-/*void * ft_memmove(void *dest, const void *src, size_t size)
+void	*ft_memmove(void *dest, const void *src, size_t size)
+{
+	if (dest < src)
+	{
+		ft_memcpy(dest, src, size);
+	}
+	else if (dest > src)
+	{
+		while (size--)
+		{
+			((char *)dest)[size] = ((char *)src)[size];
+		}
+	}
+	return (dest);
+}
+
+/*void    *ft_memmove(void *dst, const void *src, size_t len)
+{
+	const char  *s;
+	char        *d;
+	s = (const char *) src;
+	d = (char *) dst;
+	if (s < d)
+	{
+		s += len;
+		d += len;
+		while (len--)
+			*--d = *--s;
+	}
+	else if (s > d)
+		while (len--)
+			*d++ = *s++;
+	return (dst);
+}
+void * ft_memmove(void *dest, const void *src, size_t size)
 {
 	int i;
 	i = 0;
@@ -40,19 +74,3 @@
 	}
 	return(dest);
 }*/
-
-void	*ft_memmove(void *dest, const void *src, size_t size)
-{
-	if (dest < src)
-	{
-		ft_memcpy(dest, src, size);
-	}
-	else if (dest > src)
-	{
-		while (size--)
-		{
-			((char *)dest)[size] = ((char *)src)[size];
-		}
-	}
-	return (dest);
-}
