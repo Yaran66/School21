@@ -6,7 +6,7 @@
 #   By: wjasmine <marvin@42.fr>                    +#+  +:+       +#+        #
 #                                                +#+#+#+#+#+   +#+           #
 #   Created: 2021/10/26 14:58:42 by wjasmine          #+#    #+#             #
-#   Updated: 202#   Updated: 2021/11/03 13:33:53 by wjasmine         ###   ########.fr       #                                                              #
+#   Updated: 202#   Updated: 2021/11/04 17:45:53 by wjasmine         ###   ########.fr       #                                                              #
 # ************************************************************************** #
 
 SRCS	=	ft_isalnum.c ft_toupper.c ft_substr.c \
@@ -16,10 +16,10 @@ SRCS	=	ft_isalnum.c ft_toupper.c ft_substr.c \
 			ft_isprint.c ft_strncmp.c \
 			ft_memcpy.c ft_memchr.c \
 			ft_memmove.c ft_memcmp.c \
-			ft_memset.c ft_strnstr.c \
-			ft_strlen.c ft_atoi.c \
-			ft_bzero.c ft_calloc.c \
-			ft_strlcpy.c ft_strdup.c\
+			ft_memset.c ft_strnstr.c ft_putchar_fd.c \
+			ft_strlen.c ft_atoi.c ft_putstr_fd.c \
+			ft_bzero.c ft_calloc.c ft_putendl_fd.c \
+			ft_strlcpy.c ft_strdup.c ft_putnbr_fd.c \
 			ft_strlcat.c
 
 SRCS_B	=

@@ -6,18 +6,15 @@
 /*   By: wjasmine <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 15:43:39 by wjasmine          #+#    #+#             */
-/*   Updated: 2021/11/03 18:41:35 by wjasmine         ###   ########.fr       */
+/*   Updated: 2021/11/03 18:41:52 by wjasmine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	//char	*trim;
 	int		i;
-	//int		j;
 
-	//j = 0;
 	if (s1 == 0 || set == 0)
 		return (0);
 	while (*s1 && ft_strchr(set, *s1))
