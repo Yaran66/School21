@@ -6,14 +6,14 @@
 #   By: wjasmine <marvin@42.fr>                    +#+  +:+       +#+        #
 #                                                +#+#+#+#+#+   +#+           #
 #   Created: 2021/10/26 14:58:42 by wjasmine          #+#    #+#             #
-#   Updated: 202#   Updated: 2021/11/05 15:59:41 by wjasmine         ###   ########.fr       #                                                              #
+#   Updated: 202#   Updated: 2021/11/05 17:31:27 by wjasmine         ###   ########.fr       #                                                              #
 # ************************************************************************** #
 
 SRCS	=	ft_isalnum.c ft_toupper.c ft_substr.c \
 			ft_isalpha.c ft_tolower.c ft_strjoin.c \
 			ft_isascii.c ft_strchr.c ft_strtrim.c \
-			ft_isdigit.c ft_strrchr.c \
-			ft_isprint.c ft_strncmp.c \
+			ft_isdigit.c ft_strrchr.c ft_split.c \
+			ft_isprint.c ft_strncmp.c ft_itoa.c \
 			ft_memcpy.c ft_memchr.c ft_striteri.c \
 			ft_memmove.c ft_memcmp.c ft_strmapi.c \
 			ft_memset.c ft_strnstr.c ft_putchar_fd.c \
