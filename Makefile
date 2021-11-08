@@ -6,7 +6,7 @@
 #   By: wjasmine <marvin@42.fr>                    +#+  +:+       +#+        #
 #                                                +#+#+#+#+#+   +#+           #
 #   Created: 2021/10/26 14:58:42 by wjasmine          #+#    #+#             #
-#   Updated: 202#   Updated: 2021/11/05 17:31:27 by wjasmine         ###   ########.fr       #                                                              #
+#   Updated: 2021/11/05 17:31:27 by wjasmine         ###   ########.fr       #
 # ************************************************************************** #
 
 SRCS	=	ft_isalnum.c ft_toupper.c ft_substr.c \

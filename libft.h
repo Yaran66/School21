@@ -5,12 +5,14 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: wjasmine <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/27 16:25:36 by wjasmine          #+#    #+#             */
-/*   Updated: 2021/11/05 17:37:36 by wjasmine         ###   ########.fr       */
+/*   Created: 2021/11/08 18:31:42 by wjasmine          #+#    #+#             */
+/*   Updated: 2021/11/08 18:31:42 by wjasmine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #ifndef LIBFT_H
 # define LIBFT_H
+
 # include <stdlib.h>
 # include <unistd.h>
 
@@ -48,4 +50,5 @@ void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
+
 #endif
