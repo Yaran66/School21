@@ -34,7 +34,6 @@ GCC	= gcc
 RM	= rm -f
 
 CFLAGS	= -Wall -Wextra -Werror
-OPTFLAGS = -O2
 
 all:		${NAME}
 
@@ -42,7 +41,7 @@ $(NAME):	${OBJS}
 			ar rcs ${NAME} $?
 
 %.o	:	%.c libft.h
-		${GCC}	${CFLAGS}	${OPTFLAGS} -c $< -o ${<:.c=.o}
+		${GCC}	${CFLAGS}	 -c $< -o ${<:.c=.o}
 
 
 bonus:

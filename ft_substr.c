@@ -21,7 +21,10 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	if (substr == 0 || s == 0 )
 		return (0);
 	if (start >= ft_strlen(s))
+	{
+		substr[i] = '\0';
 		return (substr);
+	}
 	while (s[start] != 0 && i < len)
 	{
 		substr[i] = s[start];

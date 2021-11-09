@@ -24,28 +24,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 		i--;
 	return (ft_substr(s1, 0, i + 1));
 }
-
-/*	trim = malloc (sizeof(*s1) * (i + 2));
-	if (trim == 0 || s1 == 0 )
-		return (0);
-	//if (i >= (int)ft_strlen(s1))
-	//	return (trim);
-	while (s1[j] != 0 && j < i)
-	{
-		trim[j] = s1[j];
-		j++;
-	}
-	trim[i] = '\0';
-	return (trim);
-
-	trim = malloc ((i + 1));
-	if (trim == 0)
-		return (0);
-	while (s1[j] != 0 && i)
-	{
-		trim[j] = s1[j];
-		i--;
-		j++;
-	}
-	trim[j] = '\0';
-	return (trim);*/

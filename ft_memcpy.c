@@ -26,18 +26,3 @@ void	*ft_memcpy(void *dest, const void *src, size_t size)
 	}
 	return (dest);
 }
-
-/*void * ft_memcpy(void *dest, const void *src, size_t size)
-{
-	size_t i;
-	if (dest != src)
-	{
-		i = 0;
-		while (i < size)
-		{
-			*((char *) dest + i) = *((char *) src + i);
-			i++;
-		}
-	}
-	return(dest);
-}*/

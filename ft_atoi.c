@@ -11,8 +11,6 @@
 /* ************************************************************************** */
 #include "libft.h"
 
-//int is_space
-
 int	ft_atoi(const char *str)
 {
 	int		sign;
