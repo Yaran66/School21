@@ -57,7 +57,7 @@ char	*ft_word_extract(char const *str, char c)
 
 void	ft_free_words_ptr(int i, char **ptr)
 {
-	while (i < 0)
+	while (i > 0)
 	{
 		free(ptr[i - 1]);
 		i--;
