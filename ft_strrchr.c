@@ -6,7 +6,7 @@
 /*   By: wjasmine <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/27 16:49:34 by wjasmine          #+#    #+#             */
-/*   Updated: 2021/11/09 12:34:39 by wjasmine         ###   ########.fr       */
+/*   Updated: 2021/11/09 22:31:07 by wjasmine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -25,4 +25,4 @@ char	*ft_strrchr(const char *s, int c)
 		i--;
 	}
 	return (0);
-}
+}  
