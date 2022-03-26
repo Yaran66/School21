@@ -1,18 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wjasmine <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/04 17:39:25 by wjasmine          #+#    #+#             */
-/*   Updated: 2021/11/08 19:24:42 by wjasmine         ###   ########.fr       */
+/*   Created: 2022/03/11 13:42:11 by wjasmine          #+#    #+#             */
+/*   Updated: 2022/03/11 13:42:16 by wjasmine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "push_swap.h"
 
-void	ft_putstr_fd(char *s, int fd)
+t_list	*ft_lstnew(void *content)
 {
-	if (s != 0 && fd >= 0)
-		write (fd, s, ft_strlen(s));
+	t_list	*node;
+
+	node = (t_list *)malloc(sizeof(t_list) * 1);
+	if (node == NULL)
+		return (NULL);
+	node->content = content;
+	node->next = NULL;
+	return (node);
 }

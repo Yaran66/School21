@@ -9,7 +9,7 @@
 /*   Updated: 2021/11/07 18:26:26 by wjasmine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "libft.h"
+#include "push_swap.h"
 
 int	ft_wordcount(const char *s, char c)
 {

@@ -1,18 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_lstclear.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wjasmine <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/04 17:39:25 by wjasmine          #+#    #+#             */
-/*   Updated: 2021/11/08 19:24:42 by wjasmine         ###   ########.fr       */
+/*   Created: 2022/03/12 17:07:04 by wjasmine          #+#    #+#             */
+/*   Updated: 2022/03/12 17:07:10 by wjasmine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "push_swap.h"
 
-void	ft_putstr_fd(char *s, int fd)
+void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
-	if (s != 0 && fd >= 0)
-		write (fd, s, ft_strlen(s));
+	t_list	*tmp;
+
+	if (*lst == NULL || del == NULL)
+	{
+		return ;
+	}
+	while (*lst != NULL)
+	{
+		tmp = *lst;
+		*lst = (*lst)->next;
+		del(tmp->content);
+		free(tmp);
+	}
+	*lst = NULL;
 }

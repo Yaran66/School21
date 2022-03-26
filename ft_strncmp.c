@@ -9,7 +9,7 @@
 /*   Updated: 2021/11/08 19:24:42 by wjasmine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "libft.h"
+#include "push_swap.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
